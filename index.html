@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="author" content="Clouza">
+    <meta name="description" content="Survey Form freeCodeCamp">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form | Clouza</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 id="title">Survey Form Clouza</h1>
+        <p id="description">
+            Interested in working with us?
+        </p>
+        <form action="" method="get" id="survey-form">
+            <div class="form-group">
+                <label for="name" id="name-label">Your Name</label>
+                <input type="text" name="name" id="name" placeholder="Your Name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email" id="email-label">Your Email</label>
+                <input type="email" name="email" id="email" placeholder="YourEmail@example.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="number" id="number-label">Your expectation about this survey</label>
+                <input type="number" name="number" id="number" placeholder="Choose between 1 and 10" min="1" max="10"
+                    required>
+            </div>
+
+            <select name="favoriteLanguage" id="dropdown">
+                <option value="" disabled selected>Where did you get this information?</option>
+                <option value="Website">Website</option>
+                <option value="My Friend">My Friend</option>
+                <option value="Ads">Ads</option>
+                <option value="Article">Article</option>
+            </select>
+
+            <fieldset>
+                <legend>
+                    Salary Expectations
+                </legend>
+                <div class="fieldset-group">
+                    <input type="radio" value="1mil" id="1mil" name="salary">
+                    <label for="1mil">1 - 2 Million</label>
+                </div>
+
+                <div class="fieldset-group">
+                    <input type="radio" value="2mil" id="2mil" name="salary">
+                    <label for="2mil">2 - 4 Million</label>
+                </div>
+
+                <div class="fieldset-group">
+                    <input type="radio" value="3mil" id="3mil" name="salary">
+                    <label for="3mil">3 - 6 Million</label>
+                </div>
+
+                <div class="fieldset-group">
+                    <label for="customSalary">Rp</label>
+                    <input type="number" id="customSalary">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    Work Place
+                </legend>
+                <div class="fieldset-group">
+                    <input type="checkbox" value="office" id="office">
+                    <label for="office">Office</label>
+                </div>
+
+                <div class="fieldset-group">
+                    <input type="checkbox" value="home" id="home">
+                    <label for="home">Home</label>
+                </div>
+            </fieldset>
+
+            <div class="form-group">
+                <textarea name="question" id="question" placeholder="Any question?"></textarea>
+                <button type="submit" id="submit">
+                    Send
+                </button>
+            </div>
+
+        </form>
+    </div>
+
+    <!-- freeCodeCamp -->
+    <script>
+        const projectName = 'survey-form';
+    </script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
